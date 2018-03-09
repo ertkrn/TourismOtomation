@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48EBD3A0-7747-44DE-9405-776B093DD38B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Turizm</RootNamespace>
+    <AssemblyName>Turizm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KoltukAra54.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltukAra54.Designer.cs">
+      <DependentUpon>KoltukAra54.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoltukAra46.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltukAra46.Designer.cs">
+      <DependentUpon>KoltukAra46.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoltukAra78.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltukAra78.Designer.cs">
+      <DependentUpon>KoltukAra78.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listeleme.Designer.cs">
+      <DependentUpon>Listeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtobusIslem.Designer.cs">
+      <DependentUpon>OtobusIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RezervasyonIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonIslem.Designer.cs">
+      <DependentUpon>RezervasyonIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatisListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisListeleme.Designer.cs">
+      <DependentUpon>SatisListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferAra.Designer.cs">
+      <DependentUpon>SeferAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletSatisGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletSatisGiris.Designer.cs">
+      <DependentUpon>BiletSatisGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hosgeldiniz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hosgeldiniz.Designer.cs">
+      <DependentUpon>Hosgeldiniz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeferIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferIslem.Designer.cs">
+      <DependentUpon>SeferIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferKoltukIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferKoltukIslem.Designer.cs">
+      <DependentUpon>SeferKoltukIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SehirIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SehirIslem.Designer.cs">
+      <DependentUpon>SehirIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepet.Designer.cs">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurizmDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurizmDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TurizmDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurizmDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YardımSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YardımSayfa.Designer.cs">
+      <DependentUpon>YardımSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yetkili.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yetkili.Designer.cs">
+      <DependentUpon>Yetkili.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YetkiliGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliGiris.Designer.cs">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YetkiliIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliIslem.Designer.cs">
+      <DependentUpon>YetkiliIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YolcuKart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YolcuKart.Designer.cs">
+      <DependentUpon>YolcuKart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YolcuKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YolcuKayıt.Designer.cs">
+      <DependentUpon>YolcuKayıt.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="KoltukAra54.resx">
+      <DependentUpon>KoltukAra54.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoltukAra46.resx">
+      <DependentUpon>KoltukAra46.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoltukAra78.resx">
+      <DependentUpon>KoltukAra78.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listeleme.resx">
+      <DependentUpon>Listeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtobusIslem.resx">
+      <DependentUpon>OtobusIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezervasyonIslem.resx">
+      <DependentUpon>RezervasyonIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisListeleme.resx">
+      <DependentUpon>SatisListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferAra.resx">
+      <DependentUpon>SeferAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletSatisGiris.resx">
+      <DependentUpon>BiletSatisGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hosgeldiniz.resx">
+      <DependentUpon>Hosgeldiniz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SeferIslem.resx">
+      <DependentUpon>SeferIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferKoltukIslem.resx">
+      <DependentUpon>SeferKoltukIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SehirIslem.resx">
+      <DependentUpon>SehirIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sepet.resx">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YardımSayfa.resx">
+      <DependentUpon>YardımSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yetkili.resx">
+      <DependentUpon>Yetkili.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliGiris.resx">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliIslem.resx">
+      <DependentUpon>YetkiliIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YolcuKart.resx">
+      <DependentUpon>YolcuKart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YolcuKayıt.resx">
+      <DependentUpon>YolcuKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TurizmDataSet.xsc">
+      <DependentUpon>TurizmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TurizmDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TurizmDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TurizmDataSet.xss">
+      <DependentUpon>TurizmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TurizmDataSet1.xsc">
+      <DependentUpon>TurizmDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TurizmDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TurizmDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TurizmDataSet1.xss">
+      <DependentUpon>TurizmDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus-ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yetkili.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membercard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant-membership-card-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Otobüsekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personelekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozisyonekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\güzergahekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seferekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\güzergahekle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membership.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmaekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seferpersonelekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bölgebayiekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altbayiekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\markaekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modelekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yetkiliekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayıtekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisyap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koltukara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oseklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pzyneklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pzyneklegncll1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gzrgheklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmeklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prsnleklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfreklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ileklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfrprsnleklegncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oseklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pzyneklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pzyneklegncllsil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gzrgheklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmeklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prsnleklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfreklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfrprsnleklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ileklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yetkilieklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubbish-bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classmaster_3_axle-with_white_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travego15shd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travego15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travego151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travego152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s3_1461652824_setra-s431-j.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80plan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfrkltkeklegncllsil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_55335789-stock-photo-seats-of-tourism-bus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rzrvsyngncll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-circular-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-circular-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sefer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkiye-iller-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus-ticket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
